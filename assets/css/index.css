@@ -5,25 +5,24 @@ h1{
     position: sticky;
     top: 0;
     padding: 1rem;
-    background-color: rgb(51, 51, 51);
+    background-color: #2C2D31;
 
 }
 
 body{
-    background-color: rgb(51, 51, 51);
+    background-color: #2C2D31;
+    font-family: Roboto, sans-serif;
 }
 
 figure{
     padding: 1rem;
     width: 75%;
-    background-color: #fff;
     margin: 1rem 1rem 0;
 }
 
 figcaption{
-    background-color: white;
     font-size: 2rem;
-
+    color: white;
 }
 
 img{
@@ -34,6 +33,6 @@ li{
     width: 80%;
     padding: 1rem;
     margin: 1rem auto;
-    background-color: white;
+    background-color: #3E4045;
     font-size: 2rem;
 }
