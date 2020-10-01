@@ -14,11 +14,13 @@ body{
     font-family: Roboto, sans-serif;
 }
 
-figure{
-    padding: 1rem;
+/*figure{
     width: 75%;
     margin: 1rem 1rem 0;
+    display: flex;
 }
+
+ */
 
 figcaption{
     font-size: 2rem;
@@ -30,9 +32,75 @@ img{
 }
 
 li{
-    width: 80%;
-    padding: 1rem;
+    width: 40%;
     margin: 1rem auto;
+    border-radius: 5rem;
     background-color: #3E4045;
     font-size: 2rem;
+    box-shadow: 1px 2px 5px 1px #727575;
+}
+
+.card-right, .card-left {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 100%;
+    border-radius: 5rem;
+    box-shadow:  0 3px 9px 1px rgba(0, 10, 20, 0.2);
+}
+
+.card-right {
+    flex-direction: row-reverse;
+    grid-column: auto / span 2;
+    grid-row: auto / span 1;
+}
+
+.card-left {
+    flex-direction: row;
+    grid-column: auto / span 2;
+    grid-row: auto / span 1;
+}
+
+.card-image {
+    display: flex;
+}
+
+.card-left .card-image, .card-right .card-image {
+    height: 100%;
+    width: 50%;
+}
+
+.card-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-right img {
+    border-radius: 0 5rem 5rem 0;
+}
+
+.card-left img {
+    border-radius: 5rem 0 0 5rem;
+}
+
+.card-text {
+    align-self: center;
+    padding: 1rem;
+}
+
+.card-right .card-text {
+    height: auto;
+    width: 50%;
+    padding-left: 1rem;
+}
+
+.card-left .card-text {
+    height: auto;
+    width: 50%;
+    padding-right: 1rem;
+}
+
+.card-text p {
+    margin: 0;
+    line-height: 1.35em;
 }
