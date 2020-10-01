@@ -78,6 +78,10 @@ figcaption{
     color: white;
 }
 
+figure{
+    overflow: hidden;
+}
+
 img{
     width: 15rem;
 }
