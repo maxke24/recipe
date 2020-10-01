@@ -3,10 +3,19 @@ document.addEventListener("DOMContentLoaded", init);
 
 let recipeList;
 let allRecipes = [];
+let button;
 
 function init() {
     recipeList = document.querySelector(".recipes");
     loadRecipes();
+
+    button = document.querySelector(".hamburger");
+
+    button.addEventListener("click", () =>{
+        button.classList.toggle("is-active");
+    })
+
+
 }
 
 function loadRecipes() {
