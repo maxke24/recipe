@@ -30,8 +30,8 @@ function loadRecipes() {
 }
 
 function fillRecipes() {
-    for(let i = 0; i < 100; i++) {
+    for(let i = 0; i < 10; i++) {
         recipeList.innerHTML += `<li><figure class="card-left"><img src="media/${allRecipes[i]}.jpg" class="card-img" alt="recipe"><figcaption class="card-text"><p>${allRecipes[i].replaceAll("-", " ")}</p></figcaption></figure></li>`;
     }
-
+    recipeList.innerHTML += `<li><figure class="card-left"><img src="../../media/plus.svg" class="card-img" id="add" alt="Add new"><figcaption class="card-text"><p>Add new recipe</p></figcaptionfigure></li>`;
 }
