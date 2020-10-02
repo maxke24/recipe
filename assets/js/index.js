@@ -4,16 +4,37 @@ document.addEventListener("DOMContentLoaded", init);
 let recipeList;
 let allRecipes = [];
 let button;
+let section;
+let recipeButton;
+
+function openForm(e) {
+    e.preventDefault();
+    section.style.display = "block";
+}
+
+function closeForm(e) {
+    e.preventDefault();
+
+    section.style.display = "none";
+}
 
 function init() {
     recipeList = document.querySelector(".recipes");
     loadRecipes();
 
+
+    section = document.querySelector(".add-recipe");
+
+
+    recipeButton = document.querySelector(".recipes:last-child");
+    recipeButton.addEventListener("click", openForm);
+
+/*
     button = document.querySelector(".hamburger");
 
     button.addEventListener("click", () =>{
         button.classList.toggle("is-active");
-    })
+    })*/
 
 
 }

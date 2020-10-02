@@ -166,3 +166,34 @@ li{
     width: 4rem;
     padding: 0 5.5rem;
 }
+
+.add-recipe{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: none;
+}
+
+.add-recipe form{
+    width: 75%;
+    background: #2c2d31ed;
+    margin: 1rem auto auto;
+    color: white;
+    box-shadow: 2px 3px 4px 3px black;
+    height: 45rem;
+}
+
+.add-recipe form label{
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.add-recipe form input{
+    background-color: #3E4045;
+    border: none;
+    box-shadow: 0 7px 9px 1px rgba(0, 10, 20, 0.2);
+    border-radius: 5rem;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
